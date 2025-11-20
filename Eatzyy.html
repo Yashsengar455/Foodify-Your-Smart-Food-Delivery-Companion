@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eatzy – Fast, Fresh & Fun</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('image.png');">
+
+  <header>
+    <nav class="container nav">
+      <div class="brand">
+        <div class="logo">Ez</div>
+        <div>
+          <h1>Eatzy</h1>
+          <small>Fast • Fresh • Fun</small>
+        </div>
+      </div>
+      <div class="navlinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#menu">Restaurants</a>
+        <a href="#cart">Cart</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div>
+        <h2>Bhook lagi? <span class="highlight">Eatzy</span> hai na! 🍽️</h2>
+        <p>Discover local favorites and hot new kitchens. Add to cart in one tap, apply deals, and track delivery live. Fresh bites. Fast delivery.</p>
+        <div class="cta">
+          <a class="btn" id="lol" href="#menu">Order Now</a>
+          <a class="btn secondary" id="lolo" href="#contact">Contact</a>
+        </div>
+        <div class="grid cols-3 info-cards">
+          <div class="card">
+            <strong>⚡ Fast Delivery</strong>
+            <p>Citywide coverage with smart ETAs.</p>
+          </div>
+          <div class="card">
+            <strong>🥗 Fresh & Local</strong>
+            <p>Prioritizing nearby kitchens & eco packaging.</p>
+          </div>
+          <div class="card">
+            <strong>💸 Hot Deals</strong>
+            <p>Apply promo codes to save more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1606755962773-0b13d1d1a8be?w=800" alt="Delicious food collage">
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <h3 style="color:whitesmoke;font-weight: bold;font-style: italic;font-size: 24px;">Popular Restaurants</h3>
+      <div class="grid cols-3 restaurant-grid">
+        <div class="card">
+          <img src="bombay_bites.jpeg" alt="Bombay Bites">
+          <div class="pad">
+            <h4>Bombay Bites</h4>
+            <p>North Indian • ⭐ 4.6</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pizza_planet.jpeg" alt="Pizza Planet">
+          <div class="pad">
+            <h4>Pizza Planet</h4>
+            <p>Italian • ⭐ 4.4</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="momo.jpeg" alt="Momo Magic">
+          <div class="pad">
+            <h4>Momo Magic</h4>
+            <p>Tibetan • ⭐ 4.2</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+      <h3>Your Cart</h3>
+      <p class="muted">This is a demo of your shopping cart layout. In the dynamic phase, this section will display added items and total price using JavaScript.</p>
+      <div class="card cart-box">
+        <p>No items yet. Start adding delicious meals from the menu!</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="grid cols-2">
+        <div class="card contact-form">
+          <h3>Contact Us</h3>
+          <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required>
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com" required>
+            <label>Message</label>
+            <textarea rows="4" placeholder="Type your message..."></textarea>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="card about">
+          <h3>About Eatzy</h3>
+          <p>EATZY was founded on the simple idea that food delivery should be fast, reliable, and responsible. We believe in supporting local communities by partnering with independent restaurants and home chefs, giving them a platform to reach more customers.</p>
+          <p><strong>Technologies Used:</strong> HTML5 • CSS3</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <p>© 2025 Eatzy • Project by Yash Sengar</p>
+      <p>**Local Sourcing:** We prioritize restaurants that use fresh, locally-sourced ingredients, ensuring quality and flavor.
+        **Eco-Friendly Miles:** Our delivery network heavily utilizes bicycles and electric vehicles in urban areas, reducing our carbon footprint significantly.
+        **Zero Waste Packaging:** All our partners are required to use compostable or recyclable packaging to minimize environmental impact.
+        **Fair Pay:** We ensure our delivery staff receive fair wages and excellent benefits.
+      </p>
+      <a href="#home" class="btn secondary">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

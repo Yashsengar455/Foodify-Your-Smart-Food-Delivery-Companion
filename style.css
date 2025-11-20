@@ -1,0 +1,196 @@
+/* ==== EATZY THEME ==== */
+:root {
+  --primary: #ff7a00;
+  --accent: #4caf50;
+  --text: #333;
+  --muted: #777;
+  --bg: #fff;
+  --bg-soft: #f9f9f9;
+  --radius: 14px;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ==== RESET ==== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+img { width: 100%; display: block; border-radius: var(--radius); }
+a { text-decoration: none; color: inherit; }
+
+/* ==== LAYOUT ==== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+section { padding: 40px 0; }
+h1, h2, h3, h4 { font-family: "Poppins", sans-serif; color: var(--text); }
+
+/* ==== NAVBAR ==== */
+header {
+  border-bottom: none;
+  background: var(--bg);
+  
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(155, 205, 196);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.navlinks a {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  transition: 0.2s;
+}
+.navlinks a:hover,
+.navlinks a.active {
+  background: var(--primary);
+}
+
+/* ==== HERO ==== */
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.hero h2 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+.hero .highlight { color: var(--primary); }
+.hero p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 16px;
+}
+.cta {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+.btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.2s;
+  margin-bottom: 50px;
+}
+#lol{
+  margin-right:10px;
+}
+.btn:hover { opacity: 0.9; }
+.btn.secondary {
+  background: var(--bg-soft);
+  color: var(--text);
+}
+.grid {
+  display: grid;
+  gap: 16px;
+}
+.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .cols-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .cols-3, .cols-2 { grid-template-columns: 1fr; }
+}
+
+/* ==== CARDS ==== */
+.card {
+  background: var(--bg);
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  margin: 20px;
+  width: 300px;
+  background-color: lightgrey;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.pad { padding: 14px; }
+.info-cards p { color: var(--muted); font-size: 14px; }
+
+/* ==== RESTAURANT GRID ==== */
+.restaurant-grid .card img {
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.restaurant-grid h4 { margin-top: 10px; }
+
+/* ==== CART ==== */
+.cart-box {
+  text-align: center;
+  color: var(--muted);
+  padding: 40px;
+}
+
+/* ==== CONTACT ==== */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-family: inherit;
+}
+.contact-form button {
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  border-top: 1px solid #eee;
+  background: var(--bg-soft);
+  padding: 30px 0;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer p { color: var(--muted); font-size: 14px; }
